@@ -1,0 +1,3581 @@
+Input:
+1 1 0/no
+1 1 1/no
+1 1 2/no
+1 1 3/no
+1 1 4/no
+1 1 5/no
+1 1 6/no
+1 1 7/no
+1 1 8/no
+1 1 9/no
+1 1 )/no
+1 2 (/next
+2 3 0/next
+2 2 1/no
+2 2 2/no
+2 2 3/no
+2 2 4/no
+2 2 5/no
+2 2 6/no
+2 2 7/no
+2 2 8/no
+2 2 9/no
+2 2 )/no
+2 2 (/no
+3 4 0/next
+3 2 1/no
+3 2 2/no
+3 2 3/no
+3 2 4/no
+3 2 5/no
+3 2 6/no
+3 2 7/no
+3 2 8/no
+3 2 9/no
+3 2 )/no
+3 2 (/no
+4 2 0/no
+4 2 1/no
+4 2 2/no
+4 2 3/no
+4 2 4/no
+4 2 5/no
+4 2 6/no
+4 5 7/next
+4 2 8/no
+4 2 9/no
+4 2 )/no
+4 2 (/no
+5 5 0/no
+5 5 1/no
+5 5 2/no
+5 5 3/no
+5 5 4/no
+5 5 5/no
+5 5 6/no
+5 5 7/no
+5 5 8/no
+5 5 9/no
+5 6 )/yes
+5 5 (/no
+6 6 (/yes
+6 6 )/yes
+6 6 0/yes
+
+Output: 
+FSM input from:  Task3.txt
+States: 6
+Edges 63
+Input alphabet:
+(
+)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Output alphabet:
+next
+no
+yes
+
+From 	 Input/Output 	 To
+1	 2/no		 1
+1	 3/no		 1
+1	 9/no		 1
+1	 5/no		 1
+1	 4/no		 1
+1	 (/next		 2
+1	 0/no		 1
+1	 8/no		 1
+1	 6/no		 1
+1	 1/no		 1
+1	 7/no		 1
+1	 )/no		 1
+2	 6/no		 2
+2	 )/no		 2
+2	 9/no		 2
+2	 8/no		 2
+2	 2/no		 2
+2	 4/no		 2
+2	 7/no		 2
+2	 1/no		 2
+2	 3/no		 2
+2	 (/no		 2
+2	 0/next		 3
+2	 5/no		 2
+3	 9/no		 2
+3	 1/no		 2
+3	 5/no		 2
+3	 2/no		 2
+3	 0/next		 4
+3	 )/no		 2
+3	 4/no		 2
+3	 7/no		 2
+3	 8/no		 2
+3	 3/no		 2
+3	 6/no		 2
+3	 (/no		 2
+4	 2/no		 2
+4	 3/no		 2
+4	 8/no		 2
+4	 0/no		 2
+4	 )/no		 2
+4	 9/no		 2
+4	 (/no		 2
+4	 4/no		 2
+4	 7/next		 5
+4	 1/no		 2
+4	 5/no		 2
+4	 6/no		 2
+5	 0/no		 5
+5	 1/no		 5
+5	 7/no		 5
+5	 9/no		 5
+5	 5/no		 5
+5	 6/no		 5
+5	 )/yes		 6
+5	 2/no		 5
+5	 (/no		 5
+5	 3/no		 5
+5	 4/no		 5
+5	 8/no		 5
+6	 )/yes		 6
+6	 0/yes		 6
+6	 (/yes		 6
+
+Transition cover set (P). 64 entries.
+Empty ( (( () (0 (0( (0) (00 (00( (00) (000 (001 (002 (003 (004 (005 (006 (007 (007( (007) (007)( (007)) (007)0 (0070 (0071 (0072 (0073 (0074 (0075 (0076 (0077 (0078 (0079 (008 (009 (01 (02 (03 (04 (05 (06 (07 (08 (09 (1 (2 (3 (4 (5 (6 (7 (8 (9 ) 0 1 2 3 4 5 6 7 8 9 
+
+W Set. 4 entries.
+( ) 0 00 
+
+Number of Test Cases :250
+Test cases: [(, ((, (((, ((), ((0, ((00, (), ()(, ()), ()0, ()00, (0, (0(, (0((, (0(), (0(0, (0(00, (0), (0)(, (0)), (0)0, (0)00, (00, (00(, (00((, (00(), (00(0, (00(00, (00), (00)(, (00)), (00)0, (00)00, (000, (000(, (000), (0000, (00000, (001(, (001), (0010, (00100, (002(, (002), (0020, (00200, (003(, (003), (0030, (00300, (004(, (004), (0040, (00400, (005(, (005), (0050, (00500, (006(, (006), (0060, (00600, (007(, (007((, (007(), (007(0, (007(00, (007), (007)(, (007)((, (007)(), (007)(0, (007)(00, (007)), (007))(, (007))), (007))0, (007))00, (007)0, (007)0(, (007)0), (007)00, (007)000, (0070, (0070(, (0070), (00700, (007000, (0071(, (0071), (00710, (007100, (0072(, (0072), (00720, (007200, (0073(, (0073), (00730, (007300, (0074(, (0074), (00740, (007400, (0075(, (0075), (00750, (007500, (0076(, (0076), (00760, (007600, (0077(, (0077), (00770, (007700, (0078(, (0078), (00780, (007800, (0079(, (0079), (00790, (007900, (008(, (008), (0080, (00800, (009(, (009), (0090, (00900, (01(, (01), (010, (0100, (02(, (02), (020, (0200, (03(, (03), (030, (0300, (04(, (04), (040, (0400, (05(, (05), (050, (0500, (06(, (06), (060, (0600, (07(, (07), (070, (0700, (08(, (08), (080, (0800, (09(, (09), (090, (0900, (1(, (1), (10, (100, (2(, (2), (20, (200, (3(, (3), (30, (300, (4(, (4), (40, (400, (5(, (5), (50, (500, (6(, (6), (60, (600, (7(, (7), (70, (700, (8(, (8), (80, (800, (9(, (9), (90, (900, ), )(, )), )0, )00, 0, 0(, 0), 00, 000, 1(, 1), 10, 100, 2(, 2), 20, 200, 3(, 3), 30, 300, 4(, 4), 40, 400, 5(, 5), 50, 500, 6(, 6), 60, 600, 7(, 7), 70, 700, 8(, 8), 80, 800, 9(, 9), 90, 900]
+
+FSM execution begins. Input: ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:next
+
+FSM execution begins. Input: ( ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextno
+
+FSM execution begins. Input: ( ( ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( ( ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( ( 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( ( 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextno
+
+FSM execution begins. Input: ( ) ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( ) ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( ) 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( ) 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnext
+
+FSM execution begins. Input: ( 0 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextno
+
+FSM execution begins. Input: ( 0 ( ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 ( ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 ( 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 ( 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextno
+
+FSM execution begins. Input: ( 0 ) ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 ) ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 ) 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 ) 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnext
+
+FSM execution begins. Input: ( 0 0 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextno
+
+FSM execution begins. Input: ( 0 0 ( ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 ( ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 ( 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 ( 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ( Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextno
+
+FSM execution begins. Input: ( 0 0 ) ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 ) ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 ) 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 ) 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: ) Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 0 Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextno
+
+FSM execution begins. Input: ( 0 0 0 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 0 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 0 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 0 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 0 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 0 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 0 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 1 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 1 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 1 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 1 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 2 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 2 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 2 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 2 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 3 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 3 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 3 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 3 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 4 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 4 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 4 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 4 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 5 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 5 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 5 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 5 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 6 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 6 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 6 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 6 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 7 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextno
+
+FSM execution begins. Input: ( 0 0 7 ( ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ( Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 ( ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ( Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 ( 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ( Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 ( 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ( Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyes
+
+FSM execution begins. Input: ( 0 0 7 ) ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ( ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ( ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ( 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ( 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ) ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ) ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ) 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) ) 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) 0 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: ( Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) 0 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 ) 0 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+Current state: 6
+ Input: 0 Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextyesyesyesyes
+
+FSM execution begins. Input: ( 0 0 7 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextno
+
+FSM execution begins. Input: ( 0 0 7 0 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 0 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 0 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 1 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 1 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 1 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 1 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 1 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 1 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 1 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 1 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 2 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 2 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 2 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 2 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 2 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 2 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 2 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 2 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 3 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 3 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 3 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 3 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 3 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 3 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 3 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 3 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 4 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 4 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 4 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 4 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 4 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 4 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 4 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 4 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 5 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 5 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 5 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 5 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 5 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 5 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 5 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 5 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 6 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 6 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 6 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 6 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 6 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 6 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 6 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 6 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 7 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 7 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 7 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 7 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 7 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 7 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 7 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 7 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 8 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 8 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 8 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 8 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 8 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 8 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 8 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 8 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 7 9 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 9 Next state: 5 Output: no
+Current state: 5
+ Input: ( Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 9 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 9 Next state: 5 Output: no
+Current state: 5
+ Input: ) Next state: 6 Output: yes
+
+FSM execution completed. Final state: 6
+Output pattern:nextnextnextnextnoyes
+
+FSM execution begins. Input: ( 0 0 7 9 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 9 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnono
+
+FSM execution begins. Input: ( 0 0 7 9 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 7 Next state: 5 Output: next
+Current state: 5
+ Input: 9 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+Current state: 5
+ Input: 0 Next state: 5 Output: no
+
+FSM execution completed. Final state: 5
+Output pattern:nextnextnextnextnonono
+
+FSM execution begins. Input: ( 0 0 8 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 8 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 8 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 8 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 0 9 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 9 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnextnono
+
+FSM execution begins. Input: ( 0 0 9 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnextnonext
+
+FSM execution begins. Input: ( 0 0 9 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+Current state: 4
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnextnonextnext
+
+FSM execution begins. Input: ( 0 1 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 1 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 1 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 1 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 2 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 2 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 2 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 2 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 3 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 3 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 3 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 3 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 4 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 4 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 4 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 4 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 5 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 5 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 5 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 5 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 6 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 6 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 6 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 6 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 7 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 7 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 7 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 7 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 8 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 8 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 8 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 8 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 0 9 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 9 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnextnono
+
+FSM execution begins. Input: ( 0 9 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnextnonext
+
+FSM execution begins. Input: ( 0 9 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnextnonextnext
+
+FSM execution begins. Input: ( 1 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 1 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 1 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 1 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 1 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 2 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 2 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 2 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 2 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 2 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 3 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 3 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 3 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 3 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 3 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 4 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 4 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 4 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 4 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 4 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 5 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 5 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 5 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 5 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 5 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 6 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 6 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 6 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 6 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 6 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 7 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 7 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 7 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 7 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 7 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 8 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 8 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 8 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 8 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 8 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ( 9 ( Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: ( Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 9 ) Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: ) Next state: 2 Output: no
+
+FSM execution completed. Final state: 2
+Output pattern:nextnono
+
+FSM execution begins. Input: ( 9 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+
+FSM execution completed. Final state: 3
+Output pattern:nextnonext
+
+FSM execution begins. Input: ( 9 0 0 Initial state: 1
+Current state: 1
+ Input: ( Next state: 2 Output: next
+Current state: 2
+ Input: 9 Next state: 2 Output: no
+Current state: 2
+ Input: 0 Next state: 3 Output: next
+Current state: 3
+ Input: 0 Next state: 4 Output: next
+
+FSM execution completed. Final state: 4
+Output pattern:nextnonextnext
+
+FSM execution begins. Input: ) Initial state: 1
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:no
+
+FSM execution begins. Input: ) ( Initial state: 1
+Current state: 1
+ Input: ) Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: ) ) Initial state: 1
+Current state: 1
+ Input: ) Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: ) 0 Initial state: 1
+Current state: 1
+ Input: ) Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: ) 0 0 Initial state: 1
+Current state: 1
+ Input: ) Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 0 Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:no
+
+FSM execution begins. Input: 0 ( Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 0 ) Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 0 0 Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 0 0 0 Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 1 ( Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 1 ) Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 1 0 Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 1 0 0 Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 2 ( Initial state: 1
+Current state: 1
+ Input: 2 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 2 ) Initial state: 1
+Current state: 1
+ Input: 2 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 2 0 Initial state: 1
+Current state: 1
+ Input: 2 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 2 0 0 Initial state: 1
+Current state: 1
+ Input: 2 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 3 ( Initial state: 1
+Current state: 1
+ Input: 3 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 3 ) Initial state: 1
+Current state: 1
+ Input: 3 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 3 0 Initial state: 1
+Current state: 1
+ Input: 3 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 3 0 0 Initial state: 1
+Current state: 1
+ Input: 3 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 4 ( Initial state: 1
+Current state: 1
+ Input: 4 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 4 ) Initial state: 1
+Current state: 1
+ Input: 4 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 4 0 Initial state: 1
+Current state: 1
+ Input: 4 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 4 0 0 Initial state: 1
+Current state: 1
+ Input: 4 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 5 ( Initial state: 1
+Current state: 1
+ Input: 5 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 5 ) Initial state: 1
+Current state: 1
+ Input: 5 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 5 0 Initial state: 1
+Current state: 1
+ Input: 5 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 5 0 0 Initial state: 1
+Current state: 1
+ Input: 5 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 6 ( Initial state: 1
+Current state: 1
+ Input: 6 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 6 ) Initial state: 1
+Current state: 1
+ Input: 6 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 6 0 Initial state: 1
+Current state: 1
+ Input: 6 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 6 0 0 Initial state: 1
+Current state: 1
+ Input: 6 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 7 ( Initial state: 1
+Current state: 1
+ Input: 7 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 7 ) Initial state: 1
+Current state: 1
+ Input: 7 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 7 0 Initial state: 1
+Current state: 1
+ Input: 7 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 7 0 0 Initial state: 1
+Current state: 1
+ Input: 7 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 8 ( Initial state: 1
+Current state: 1
+ Input: 8 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 8 ) Initial state: 1
+Current state: 1
+ Input: 8 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 8 0 Initial state: 1
+Current state: 1
+ Input: 8 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 8 0 0 Initial state: 1
+Current state: 1
+ Input: 8 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono
+
+FSM execution begins. Input: 9 ( Initial state: 1
+Current state: 1
+ Input: 9 Next state: 1 Output: no
+Current state: 1
+ Input: ( Next state: 2 Output: next
+
+FSM execution completed. Final state: 2
+Output pattern:nonext
+
+FSM execution begins. Input: 9 ) Initial state: 1
+Current state: 1
+ Input: 9 Next state: 1 Output: no
+Current state: 1
+ Input: ) Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 9 0 Initial state: 1
+Current state: 1
+ Input: 9 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nono
+
+FSM execution begins. Input: 9 0 0 Initial state: 1
+Current state: 1
+ Input: 9 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+Current state: 1
+ Input: 0 Next state: 1 Output: no
+
+FSM execution completed. Final state: 1
+Output pattern:nonono

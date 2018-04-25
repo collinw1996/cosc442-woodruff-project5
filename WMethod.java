@@ -375,6 +375,27 @@ public class WMethod {
 			test = tempTest;
 			Utilities.runFSM(FSM, 1, test.substring(1, test.length()), " ");
 		}
+		
+		//BondRegex Method
+		for (int i = 0; i < tests.size(); i++) {
+			System.out.println("@Test");
+			System.out.println("public void testCase" + i + "(){");
+			String test = tests.elementAt(i);
+			String tempTest = "";
+			for (int j = 0; j < test.length(); j++) {
+				char temp = test.charAt(j);
+				tempTest = tempTest + " " + temp;
+			}
+			test = tempTest;
+			String outputPattern = Utilities.runFSMBondMethod(FSM, 1, test.substring(1, test.length()), " ");
+			if(outputPattern.contains("yes")) {
+		    	System.out.println("assertTrue(" + "\"" + tests.elementAt(i) + "\"" + ".matches(pattern));");
+		    }
+		    else {
+		    	System.out.println("assertFalse(" + "\"" + tests.elementAt(i) + "\"" + ".matches(pattern));");
+		    }
+			System.out.println("}");
+		}
 	}// End of main()
 
 }// End of class WMethod
